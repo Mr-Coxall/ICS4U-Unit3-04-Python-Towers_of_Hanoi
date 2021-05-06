@@ -11,9 +11,9 @@ def hanoi(ndisks, startPeg=1, endPeg=3):
     if ndisks == 1:
         print("Move disk 1 from peg %d to peg %d" % (startPeg, endPeg))
     else:
-        hanoi(ndisks - 1, startPeg, 6 - startPeg-endPeg)
+        hanoi(ndisks - 1, startPeg, 6 - startPeg - endPeg)
         print("Move disk %d from peg %d to peg %d" % (ndisks, startPeg, endPeg))
-        hanoi(ndisks - 1, 6 - startPeg-endPeg, endPeg)
+        hanoi(ndisks - 1, 6 - startPeg - endPeg, endPeg)
 
 def main():
     # this function solves the Towers of Hanoi problem
